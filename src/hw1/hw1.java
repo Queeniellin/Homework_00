@@ -33,16 +33,20 @@ public class hw1 {
 	    System.out.println("圓面積:"+r*r*circle);
 	   
 	    //第五題
-	    //S=P(1+i)n,
+	    //S=P(1+i)n
 	    //某人在銀行存入150萬,銀行利率為2%,如果每年利息都繼續存入銀行,請用程式計算10年後,本金加利息共有多少錢 (用複利計算,公式請自行google)
 	    System.out.println("-------第五題-------");
-	    int momey=1500000;
+	    double money=1500000.0;
+	    double S=0.0;
+	    double R=0.02;
+	    S=money*Math.pow(1+R, 10);
+	    System.out.println(S);
 	  
 	    //第六題
 	    System.out.println("-------第六題-------");
 	    //兩個5都是整數、值的相加，故運算總和為10。
 	    System.out.println("結果為:"+(5+5));
-	    //第一個5為整數,'5'為字元,'5'為編碼表對應的整數=53,故運算總和為58。
+	    //第一個5為整數,'5'為字元,'5'於十六進位為35, 轉換十進位為53,故運算總和為58。
 	    System.out.println("結果為:"+(5+'5'));
 	    //第一個5為整數,"5"為字串，此並非值的相加,為字串串起來的結果,故呈現55。
 	    System.out.println("結果為:"+5+"5");
